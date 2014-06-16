@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Austin Sprawls - Interactive Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="screen">
+    <style>
+        body{
+            padding-top: 70px;
+        }
+        #logo{
+            float: left;
+            margin-right: 10px;
+            font-size: 1.7em;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            padding-top: 9px;
+            font-weight: bold;
+            line-height: 1;
+        }
+        #logo:hover{
+            text-decoration: none;
+            color: #049cdb;
+        }
+        .sidebar{
+            border-right: 1px solid black;
+        }
+        .brand{
+            height: 90%;
+            width: 90%;
+            padding: 10px;
+            float: left;
+            display: block;
+        }
+        .glyphicon{
+            padding: 10px;
+        }
+        .num{
+            color: #8B008B;
+        }
+        .rev{
+            color: #228B22;
+        }
+        @font-face {
+           font-family: 'icomoon';
+           src:url('fonts/icomoon.eot?clvenz');
+           src:url('fonts/icomoon.eot?#iefixclvenz') format('embedded-opentype'),
+	           url('fonts/icomoon.woff?clvenz') format('woff'),
+	           url('fonts/icomoon.ttf?clvenz') format('truetype'),
+	           url('fonts/icomoon.svg?clvenz#icomoon') format('svg');
+           font-weight: normal;
+           font-style: normal;
+    }
+    [data-icon]::before{
+        font-family: 'icomoon';
+        content: attr(data-icon);
+        speak: none;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+    }
+    </style>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="../../assets/js/html5shiv.js"></script>
+        <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Start nav -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand text-muted" href="https://linkedin.com/in/austinsprawls" id="logo">Austin Sprawls</a>
+            <div class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="mailto:austinsprawls@gmail.com?Subject=Let's%20Talk">
+                        <button type="button" class="btn btn-default btn-md">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                        </button>
+                    </a></li>
+                    <li><a href="tel:1-337-322-1109">
+                        <button type="button" class="btn btn-default btn-md">
+                            <span class="glyphicon glyphicon-phone"></span>
+                        </button>
+                    </a></li>
+                    <li><a href="https://github.com/austinsprawls">
+                        <button type="button" class="btn btn-default btn-lg">
+                            <span data-icon="&#xe600;"></span>
+                        </button>
+                    </a></li>
+                    <li><a href="https://linkedin.com/in/austinsprawls">
+                        <button type="button" class="btn btn-default btn-lg">
+                            <span data-icon="&#xe601;"></span>
+                        </button>
+                    </a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- End nav -->
+
+    <!--Start Jumbotron -->
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <!-- start sidebar -->
+                <div class="col-sm-3 hidden-xs hidden-sm sidebar">
+                    <h5><a href="mailto:austinsprawls@gmail.com?Subject=Let's%20Talk">
+                        austinsprawls@gmail.com</a></h5>
+                    <h5><a href="tel:1-337-322-1109">(337) 322-1109</a></h5>
+                    <a href="http://www.ibinc.com">
+                        <img src="img/ib.jpeg" class="brand"/>
+                    </a>
+                    <a href="http://www.sensa.com">
+                        <img src="img/sensa.jpg" class="brand"/>
+                    </a>
+                    <a href="http://www.responsemagazine.com/direct-response-marketing/news/sensa-wins-fourth-annual-drma-marketer-year-award-4757">
+                        <img src="img/drma.jpeg" class="brand"/>
+                    </a>
+                </div>
+                <!-- end sidebar -->
+
+                <!-- Begin main content -->
+                <div class="col-sm-9 main-body">
+                    <!-- Begin collapse -->
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        <span class="glyphicon glyphicon-plus"></span>OBJECTIVE
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    Online copywriter seeking career switch into server-side web development.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        <span class="glyphicon glyphicon-plus"></span>ACHIEVEMENTS
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>Helped increase landing page conversion rate <span class="num">5-20%</span> quarterly,
+                                            capturing a potential <span class="rev">$226,800</span> per year*</li>
+                                        <li>Helped increase cart abandon email click-through rate <span class="num">130%</span>,
+                                            recapturing a potential <span class="rev">$48,405.60</span> per year*</li>
+                                        <li>Helped place corporate blog as a Google News authority</li>
+                                    </ul>
+                                    *Estimates based on March 2012 online metrics.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        <span class="glyphicon glyphicon-plus"></span>EMPLOYMENT
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><strong>Sensa Products, LLC:</strong> online copywriter,
+                                         Manhattan Beach, CA (2012-2014)</li>
+                                        <li><strong>McDonald's:</strong> cashier, Santa Barbara,
+                                        CA (2012)</li>
+                                        <li><strong>Santa Barbara Pedicab:</strong> pedicab driver,
+                                         Santa Barbara, CA (2011-2012)</li>
+                                        <li><strong>Red Mango:</strong> cashier and food prep,
+                                         The Woodlands, TX (2009-2010)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        <span class="glyphicon glyphicon-plus"></span>SPECIAL SKILLS
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><strong>Direct-Response Copywriting:</strong> Ability to write landing page, email, blog, radio and web copy aimed at increasing ROI</li>
+                                        <li><strong>Programming Languages:</strong> Ruby, JavaScript, HTML/CSS/Saas and Python</li>
+                                        <li><strong>Frameworks/Libraries:</strong> Ruby on Rails, jQuery and Bootstrap</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        <span class="glyphicon glyphicon-plus"></span>EDUCATION
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><strong><a href="https://s3.amazonaws.com/verify.edx.org/downloads/b9d736f9f2634a2a83ca3cd840f8c096/Certificate.pdf">
+                                        Certificate:</a></strong> MIT 6.00.1x - Intro to Comp Sci w/ Python (2014)</li>
+                                        <li><strong><a href="https://www.codeschool.com/users/629527">
+                                        Code School</a> &amp; <a href="http://teamtreehouse.com/austinsprawls">Treehouse</a></strong></li>
+                                        <li><strong>B.S. Mechanical Engineering:</strong> University of California, Santa Barbara
+                                        (one year, incomplete)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Jumbotron -->
+
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
